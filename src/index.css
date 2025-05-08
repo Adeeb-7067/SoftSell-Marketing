@@ -1,0 +1,74 @@
+
+:root {
+  --peach: #FFCBA4;
+  --light-peach: #FFE5D9;
+  --olive-green: #6B8E23;
+  --light-olive: #9BBB58;
+  --lemon-yellow: #FFFACD;
+  --dark-text: #333333;
+  --light-text: #666666;
+}
+
+body {
+    
+  font-family: 'Arial', sans-serif;
+  color: var(--dark-text);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: var(--olive-green);
+  border-color: var(--olive-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-olive);
+  border-color: var(--light-olive);
+}
+
+.btn-outline-primary {
+  color: var(--olive-green);
+  border-color: var(--olive-green);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--olive-green);
+  color: white;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--peach) 0%, var(--light-peach) 100%);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--olive-green);
+  margin: 15px auto;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  background-color: var(--light-peach);
+  color: var(--olive-green);
+}
+
+.testimonial-card {
+  background-color: var(--light-peach);
+  border-left: 4px solid var(--olive-green);
+}
+
+.footer {
+  background-color: var(--olive-green);
+  color: white;
+}
